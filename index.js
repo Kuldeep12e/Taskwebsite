@@ -27,7 +27,7 @@ app.use(
   })
 );
 
-app.options("*", cors()); // important for preflight
+
 
 
 app.use("/api", v1Routes);
