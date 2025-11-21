@@ -16,13 +16,18 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    // allow local dev and deployed frontend on Vercel
-    origin: ["http://localhost:5173", "https://taskwebsite-cyan.vercel.app"],
-    credentials: true,              
+    origin: [
+      "http://localhost:5173",
+      "https://taskwebsite-cyan.vercel.app",
+      "https://taskwebsite-qkkre5vvg-kuldeep12es-projects.vercel.app"
+    ],
+    credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+app.options("*", cors()); // important for preflight
 
 
 app.use("/api", v1Routes);
