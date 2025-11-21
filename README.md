@@ -23,3 +23,12 @@ You can test all backend endpoints using this Postman collection:
 
 🔗 **Postman Collection:**  
 https://universal-spaceship-746341.postman.co/workspace/My-Workspace~13e8c6af-4bbe-40b1-84dd-537665febf55/collection/32258741-0714bdf9-bf4a-4ff8-9cff-f1b698cee9f4?action=share
+
+Frontend .env
+VITE_API_URL = "Your backend url"
+
+Backend .env
+MONGODB_URL =
+PORT =
+JWT_SECRET =
+
